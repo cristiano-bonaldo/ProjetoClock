@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ProjetoClock</string>
+    <string name="nivel_bateria">Nível da Bateria</string>
 </resources>

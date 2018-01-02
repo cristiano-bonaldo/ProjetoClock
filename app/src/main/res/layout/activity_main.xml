@@ -4,52 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".MainActivity">
 
     <TextView
-    android:id="@+id/tvHourMinute"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="00:00"
-    android:textStyle="bold"
-    android:textSize="80sp"
-    android:layout_centerVertical="true"
-    />
+        android:id="@+id/tv_battery_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        />
 
-    <TextView
-    android:id="@+id/tvSecond"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text=":00"
-    android:textStyle="bold"
-    android:textSize="40sp"
-    android:layout_centerVertical="true"
-    android:layout_toRightOf="@+id/tvHourMinute"
-    android:layout_alignBottom="@+id/tvHourMinute"
-    />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
 
+        <TextView
+            android:id="@+id/tv_hour_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="120sp"
+            android:textStyle="bold" />
 
-    <!--<LinearLayout-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_centerInParent="true">-->
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
-        <!--<TextView-->
-        <!--android:id="@+id/tvHourMinute"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="00:00"-->
-        <!--android:textStyle="bold"-->
-        <!--android:textSize="80sp"-->
-        <!--/>-->
+    <ImageView
+        android:id="@+id/bt_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_manage"
+        android:focusable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="2dp"
+        />
 
-        <!--<TextView-->
-        <!--android:id="@+id/tvSecond"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text=":00"-->
-        <!--android:textStyle="bold"-->
-        <!--android:textSize="40sp"-->
-        <!--/>-->
-    <!--</LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/ll_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_margin="2dp"
+        >
+
+        <CheckBox
+            android:id="@+id/cb_bateria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nivel_bateria"
+            />
+
+        <ImageView
+            android:id="@+id/bt_close_config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:focusable="true" />
+
+    </LinearLayout>
+
 </RelativeLayout>
