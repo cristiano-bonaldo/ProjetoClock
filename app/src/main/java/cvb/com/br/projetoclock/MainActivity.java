@@ -14,6 +14,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.Calendar;
@@ -29,8 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
         private CheckBox cbBateria;
 
-        private Button btConfig;
-        private Button btCloseConfig;
+        private ImageView ivConfig;
+        private ImageView ivCloseConfig;
+
+        private LinearLayout llPanelConfig;
 
         private void init(Activity act) {
             tvHourMinute = act.findViewById(R.id.tv_hour_minute);
@@ -39,8 +43,10 @@ public class MainActivity extends AppCompatActivity {
 
             cbBateria = act.findViewById(R.id.cb_bateria);
 
-            btConfig = act.findViewById(R.id.bt_config);
-            btCloseConfig = act.findViewById(R.id.bt_close_config);
+            ivConfig = act.findViewById(R.id.bt_config);
+            ivCloseConfig = act.findViewById(R.id.bt_close_config);
+
+            llPanelConfig = act.findViewById(R.id.ll_panel);
         }
     }
 
@@ -69,8 +75,10 @@ public class MainActivity extends AppCompatActivity {
 
         viewHolder.init(this);
 
-        viewHolder.btConfig.setOnClickListener(btConfigListener);
-        viewHolder.btCloseConfig.setOnClickListener(btCloseConfigListener);
+        viewHolder.ivConfig.setOnClickListener(btConfigListener);
+
+        viewHolder.ivCloseConfig.setOnClickListener(btCloseConfigListener);
+
         viewHolder.cbBateria.setOnClickListener(cbBateriaListener);
         viewHolder.cbBateria.setChecked(true);
     }
@@ -128,14 +136,16 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener btConfigListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-
+            viewHolder.ivConfig.setVisibility(View.GONE);
+            viewHolder.llPanelConfig.setVisibility(View.VISIBLE);
         }
     };
 
     private View.OnClickListener btCloseConfigListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-
+            viewHolder.ivConfig.setVisibility(View.VISIBLE);
+            viewHolder.llPanelConfig.setVisibility(View.GONE);
         }
     };
 
