@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "134096684715",
+    "firebase_url": "https://clock-9a428.firebaseio.com",
+    "project_id": "clock-9a428",
+    "storage_bucket": "clock-9a428.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134096684715:android:f18e2cd212256ccb",
+        "android_client_info": {
+          "package_name": "cvb.com.br.projetoclock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134096684715-bf16rab0lv7asnsu2jej0lcia3e98321.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG58J0pJ1dXrb67mk1saEdBba4lxBs93k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
