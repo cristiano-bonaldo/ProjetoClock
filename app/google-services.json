@@ -15,6 +15,50 @@
       },
       "oauth_client": [
         {
+          "client_id": "134096684715-6dctm1mk22c408n9jnc2uouqagml2vaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cvb.com.br.projetoclock",
+            "certificate_hash": "eb11d7e336fc40a1f8cd115f3f9d3acd089d1ccd"
+          }
+        },
+        {
+          "client_id": "134096684715-bf16rab0lv7asnsu2jej0lcia3e98321.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG58J0pJ1dXrb67mk1saEdBba4lxBs93k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134096684715-bf16rab0lv7asnsu2jej0lcia3e98321.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134096684715:android:33380cfd3842c9cb",
+        "android_client_info": {
+          "package_name": "cvb.com.br.convidados"
+        }
+      },
+      "oauth_client": [
+        {
           "client_id": "134096684715-bf16rab0lv7asnsu2jej0lcia3e98321.apps.googleusercontent.com",
           "client_type": 3
         }

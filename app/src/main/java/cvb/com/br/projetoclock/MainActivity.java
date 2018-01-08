@@ -87,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
     -> Crashlytics
     */
     private FirebaseAnalytics mFirebaseAnalytics;
-    private Crashlytics mFirebaseCrashlytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,8 +118,6 @@ public class MainActivity extends AppCompatActivity {
     private void adicaoFirebase() {
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.APP_OPEN, null);
-
-        mFirebaseCrashlytics = Crashlytics.getInstance();
     }
 
     private void adicaoPublicidadeAdMob() {
